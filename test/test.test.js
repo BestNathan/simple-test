@@ -5,9 +5,16 @@ test('test', () => {
   assert.equal(1, 1)
 })
 
-test('test', done => {
+test('test1', done => {
   setTimeout(() => {
-    assert.equal(1, 1)
+    assert.equal(1, 2)
     done()
   }, 1000)
 })
+
+test('test2', done => {
+    setTimeout(() => {
+      assert.equal(1, 3)
+      done()
+    }, 1000)
+  })
