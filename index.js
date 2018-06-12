@@ -24,9 +24,9 @@ async function start() {
 function work(name, fn) {
   let start = Date.now()
   let p = new Promise((resolve, reject) => {
-    let timer = setTimeout(() => {
-      reject('timeout')
-    }, 4000)
+    // let timer = setTimeout(() => {
+    //   reject(new Error('timeout'))  
+    // }, 4000)
 
     let successCallback = () => {
       clearTimeout(timer)

@@ -9,7 +9,7 @@ test('test1', done => {
   setTimeout(() => {
     assert.equal(1, 2)
     done()
-  }, 1000)
+  }, 5000)
 })
 
 test('test2', done => {
